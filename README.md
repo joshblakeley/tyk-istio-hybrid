@@ -11,9 +11,13 @@ This is a fork of the Tyk-Helm-Chart repository slimmed down and optimised for d
 - Redis installed in the cluster or reachable from K8s
 
 	`helm repo add stable https://kubernetes-charts.storage.googleapis.com`
+	
 	`helm repo update`
+	
 	`kubectl create namespace tyk-redis`
+	
 	`helm install tyk-redis stable/redis -n tyk-redis`
+	
 	`(follow notes from the installation output to get connection details)`
 
 
